@@ -1,13 +1,68 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'indie flower';
 }
 
 body {
-    background-color: aquamarine;
+
+    background-color: rgb(229, 212, 22);
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    background-color: #0000ff;
+}
+
+.container {
+    box-sizing: border-box;
+    width: max-content;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform : translate(-50%, -50%);  /* center the element  */   
+
+}
+/* .game-container {
+    
+     place-items: center;
+
+} */
+
+.cards {
+
+    margin: 48px, auto;
+    /* width: max-content; */
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 16px;
+    /* place-items: center; */
+
+}
+
+.card {
+    height: 100px;
+    color: rgb(12, 30, 232);
+    border: 5px solid rgb(232, 16, 16);
+    cursor: pointer;
+
+    
+}
+.reset {
+    text-alignment :center;
+    width:100px;
+    height:30px;
+    background-color: black;
+    float: right;
+    font-size: 24px;
+    color: yellow;
+
+
 }
