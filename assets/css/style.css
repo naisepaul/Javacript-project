@@ -15,9 +15,10 @@ body {
 }
 
 h1 {
+    text-transform: capitalize;
     text-align: center;
     font-size: 48px;
-    background-color: #0000ff;
+    background: linear-gradient(to left, rgb(81, 89, 89), aquamarine);
 }
 
 span {
@@ -27,7 +28,6 @@ span {
 
 .container {
     padding: 20px;
-
     box-sizing: border-box;
     width: max-content;
     background: linear-gradient(to left, rgb(81, 89, 89), aquamarine);
@@ -38,7 +38,15 @@ span {
     transform: translate(-50%, -50%);
     /* center the element  */
     cursor: pointer;
+}
 
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
 }
 
 .cards {
@@ -46,8 +54,7 @@ span {
     width: max-content;
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    gap: 16px;
-
+    gap: 10px;
 }
 
 .card {
@@ -65,14 +72,14 @@ span {
     border: 3px solid black;
 }
 
-.red {
+/* .red {
     background-color: red;
     /* background-image: url("../images/blue bee.jpg");
     background-size: cover;
-    background-position: center; */
-}
+    background-position: center; 
+} */
 
-.blue {
+/* .blue {
     background-color: blue;
 }
 
@@ -98,16 +105,17 @@ span {
 
 .teal {
     background-color: rgb(128, 96, 0);
-}
+} */
 
-.reset {
-    /* padding: 10px 20px; */
-
+button {
+    margin-top: 20px;
+    text-transform: uppercase;
     text-align: center;
-    width: 200px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
     background-color: black;
     float: right;
+    border-radius: 10px;
     font-size: 24px;
     color: yellow;
     cursor: pointer;
