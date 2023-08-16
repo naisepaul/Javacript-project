@@ -1,4 +1,5 @@
 
+// shuffling Colors
 const colors = ["red", "blue", "green", "yellow", "teal", "cyan", "grey", "pink"];
 const colorsPickList = [...colors, ...colors]; //make a copy of colors array
 const shufColors = colorsPickList.sort(() => 0.5 - Math.random());  // for randomly select colors
