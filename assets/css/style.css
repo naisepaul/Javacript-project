@@ -9,7 +9,9 @@
 }
 
 body {
-    background: url('../images/memorygame.jpg') center 100% / cover;
+    /* background-image: url('../images/memorygame.jpg') alt=""; */
+    /* center 100% / cover */
+    background: linear-gradient(to top, rgb(31, 223, 31), aquamarine);
 }
 
 h1 {
@@ -25,7 +27,7 @@ span {
 
 .container {
     padding: 20px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     width: max-content;
     background: linear-gradient(to left, rgb(71, 133, 133), rgb(240, 87, 87));
     border-radius: 55px;
@@ -89,7 +91,8 @@ span {
     transform: rotateY(180deg);
 }
 
-/* .cardOpen::after {
+/* .flip::after,
+.matchflip ::after {
     transform: rotateY(180deg);
 } */
 

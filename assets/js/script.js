@@ -1,52 +1,48 @@
+// document.addEventListener('DOMContentLoaded', function () {
 
+const colors = ["red", "blue", "green", "yellow", "teal", "cyan", "grey", "pink"];
+const colorsPickList = [...colors, ...colors]; //double the array
+let flippedCards = [];
+let matchedCards = [];
+let lockboard = false;
+// shuffling Colors
 
-document.addEventListener('DOMContentLoaded', function () {
+// function shuffle() {
+const shufColors = colorsPickList.sort(() => 0.5 - Math.random());  // for randomly select colors
+const cardContainer = document.querySelector('.cards');
+for (let i = 0; i < colorsPickList.length; i++) {
+    let box = document.createElement('div');
+    box.className = 'card';
+    box.style.backgroundColor = shufColors[i];
+    box.setAttribute('data-color', shufColors[i]);
+    cardContainer.appendChild(box);
+    // flipping cards
 
-    // shuffling Colors
+    let counter = 0;
 
-    const colors = ["red", "blue", "green", "yellow", "teal", "cyan", "grey", "pink"];
-    const colorsPickList = [...colors, ...colors]; //make a copy of colors array
-    const shufColors = colorsPickList.sort(() => 0.5 - Math.random());  // for randomly select colors
-    const cardContainer = document.querySelector('.cards');
+    let firstFlipped = '';
+    let secondFlipped = '';
+    let matchedCards = 0;
+    let card1, card2 = [];
 
-    // making 4*4 grid
+    box.addEventListener('click', () => {
+        box.classList.toggle('flip');
+        if (flippedCards.length < 2) {
+            flippedCards.push(box.style.backgroundColor);
+            // console.log(flippedCards);
+            // console.log(flippedCards[1]);
+            if ((flippedCards.length === 2) && (flippedCards[0] === flippedCards[1])) {
 
-    for (let i = 0; i < colorsPickList.length; i++) {
-        let box = document.createElement('div');
-        box.className = 'card';
-        box.style.backgroundColor = shufColors[i];
-        cardContainer.appendChild(box);
+                console.log(flippedCards);
 
-        // flipping cards
-
-        let cardColor = box.style.backgroundColor;
-        box.addEventListener('click', () => {
-            box.classList.toggle('flip');
-
-            // checking matching colors
-
-            let flipped = 0;
-            let firstflipped = '';
-            let secondflipped = '';
-            let matchedCards = 0;
-
-            if (flipped === 0) {
-                firstflipped = cardColor;
-                flipped++;
             } else {
-                secondflipped = cardColor;
-                flipped = 0;
-                if (firstflipped === secondflipped) {
-                    matchedCards++;
-                    const correctCards = ' ';
-                    
-                }
 
+                console.log(flippedCards[0]);
+                console.log(flippedCards[1]);
             }
+        }
 
 
+    });
 
-        });
-
-    }
-});
+}
