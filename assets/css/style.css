@@ -56,7 +56,7 @@ span {
     gap: 10px;
 }
 
-.card {
+.cards div {
     position: relative;
     width: 100px;
     height: 100px;
@@ -65,20 +65,20 @@ span {
     cursor: pointer;
     transition: .25s;
     /* transform-style: preserve-3d; */
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
     /* backface-visibility: visible; */
 }
 
-.card:hover {
+.cards div :hover {
     border: 3px solid black;
     cursor: pointer;
 }
 
-.card.backcard {
+/* .card.backcard {
     transform: rotateY(0deg);
-}
+} */
 
-.card::after {
+.backcard {
     content: '';
     position: absolute;
     inset: 0;
@@ -87,12 +87,16 @@ span {
     transition: .25s;
     border-radius: 50%;
     backface-visibility: hidden;
-    transform: rotateY(0deg);
+    /* transform: rotateY(0deg); */
 }
 
-.backcard::after {
-    transform: rotateY(180deg);
-}
+/* .backcard {
+    transform: rotateY(0deg);
+} */
+
+/* .backcard {
+    transform: rotateY(180deg); */
+/* } */
 
 
 button {
