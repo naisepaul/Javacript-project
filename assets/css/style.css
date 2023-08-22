@@ -16,23 +16,23 @@ body {
 h1 {
     text-transform: capitalize;
     text-align: center;
-    font-size: 48px;
+    font-size: 3.5em;
     background: linear-gradient(to top, rgb(31, 223, 31), aquamarine);
+
 }
 
-span {
+#moves-count,
+#time {
+    font-size: 1.5em;
     font-weight: bold;
+    color: rgb(33, 51, 1);
 }
 
+/* stats and game container */
 .container {
     padding: 20px;
     box-sizing: content-box;
     width: max-content;
-    /* background: linear-gradient(to left, rgb(177, 183, 230), rgb(158, 121, 121)); */
-    /* background: linear-gradient(45deg, rgb(41, 236, 60) 25%, transparent 5%),
-        linear-gradient(-45deg, rgb(238, 19, 19) 25%, transparent 5%);
-    background-size: 5px 5px; */
-    /* /* background-image: linear-gradient(45deg, rgb(235, 96, 96) 25%, transparent 25%, transparent 50%, rgb(16, 163, 38) 50%, rgb(40, 26, 238) 75%, transparent 75%, transparent); */
     background-size: 5px 5px;
     background-image: linear-gradient(45deg, rgb(202, 52, 52) 25%, transparent 25%, transparent 50%, rgb(245, 242, 242) 50%, #000 75%, transparent 75%, transparent);
     border-radius: 55px;
@@ -44,6 +44,7 @@ span {
     cursor: pointer;
 }
 
+/* stats container */
 .stats-container {
     display: flex;
     flex-direction: row;
@@ -53,6 +54,7 @@ span {
     font-size: 24px;
 }
 
+/* using grid for making color cards */
 .cards {
     margin: 48px, auto;
     width: max-content;
@@ -61,6 +63,7 @@ span {
     gap: 10px;
 }
 
+/* sizing the div */
 .cards div {
     position: relative;
     width: 100px;
@@ -78,6 +81,7 @@ span {
     transition: .25s;
 }
 
+/* backcard styling */
 .backcard {
     content: '';
     position: absolute;
@@ -87,9 +91,9 @@ span {
     transition: .25s;
     border-radius: 50%;
     transform-style: preserve-3d;
-    /* backface-visibility: hidden; */
 }
 
+/* start button styling */
 button {
     margin-top: 20px;
     text-transform: uppercase;
@@ -112,6 +116,7 @@ button:hover {
     color: black;
 }
 
+/* creating a class 'won' at the end  */
 .won {
     margin: 48px, auto;
     width: 500px;
