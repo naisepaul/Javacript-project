@@ -6,23 +6,30 @@ document.addEventListener('DOMContentLoaded', function () {
     // shuffling Colors
     const shufColors = colorsPickList.sort(() => 0.5 - Math.random());  // for randomly select colors
     const cardContainer = document.querySelector('.cards');
+
     //creating gameboard
     function gameBoard() {
         for (let i = 0; i < colorsPickList.length; i++) {
             let box = document.createElement('div');
             box.className = 'card';
-            // box.style.backgroundColor = shufColors[i];
+            box.style.backgroundColor = shufColors[i];
             box.setAttribute('data-color', shufColors[i]);
             cardContainer.appendChild(box);
             box.addEventListener('click', flipCard);
-            box.classList.toggle('flip');
+
         }
     }
 
     function flipCard() {
-        let cardColor = this.getAttribute('data-color');
-        console.log(cardColor);
+        if (flippedCards.length < 2) {
+            this.classList.add('backcard');
+            let cardColor = this.getAttribute('data-color');
+            flippedCards.push(cardColor);
+            // this.classList.remove('backcard');
 
+            console.log(this);
+            console.log(flippedCards);
+        }
     }
     gameBoard();
     // box.addEventListener('click', () => {
