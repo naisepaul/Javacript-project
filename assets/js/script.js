@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // https://www.youtube.com/watch?v=bznJPt4t_4s&t=742s
+
     const colors = ["red", "blue", "green", "yellow", "teal", "cyan", "grey", "pink"];
     const colorsPickList = [...colors, ...colors]; //double the array
+    const moves = document.querySelector('#no-of-moves');
     let flippedCards = [];
     let matchedColors = 0;
 
-    // shuffling Colors
+    // Code with Ania Kubów
 
     const shufColors = colorsPickList.sort(() => 0.5 - Math.random());  // for randomly select colors
     const cardContainer = document.querySelector('.cards');
 
     //creating gameboard
+    // https://www.youtube.com/watch?v=HCIFLBUldW8&t=2050s
 
     function gameBoard() {
         for (let i = 0; i < colorsPickList.length; i++) {
@@ -23,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
             box.classList.add('backcard');
             cardContainer.append(box);
             box.addEventListener('click', flipCard);
-
         }
+
     }
 
     //fliping cards (clicking cards to show the color)
@@ -41,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 setTimeout(checkMatch, 300);
             }
         }
+
     }
     // checking matching colors
 
@@ -61,9 +66,20 @@ document.addEventListener('DOMContentLoaded', function () {
             // both cards going back to the class backcard
             flippedCards[0].classList.add('backcard');
             flippedCards[1].classList.add('backcard');
+
         }
         //empty the flippedCards array
         flippedCards = [];
+
+        // counting the moves function for each pair
+        addMove();
+    }
+    // counting the moves
+    let movescount = 0;
+    moves.innerHtml = 0;
+    function addMove() {
+        movescount++;
+        moves.innerHTML = movescount;
     }
 
     // checking game is over
@@ -77,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     gameBoard();
+
 
 });
 
