@@ -86,7 +86,13 @@ document.addEventListener('DOMContentLoaded', function () {
         movescount++;
         moves.innerHTML = movescount;
     }
+    //time settings
+    setInterval(function () {
 
+        let currentTime = timerElement.innerHTML;
+        currentTime++;
+        timerElement.innerHTML = currentTime;
+    }, 1000);
 
 
     // checking game is over
@@ -98,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //removing the container class and adding new class won
             cardContainer.classList.remove('container');
             cardContainer.classList.add('won');
-
+            clearInterval(timerElement);
         }
     }
     gameBoard();
