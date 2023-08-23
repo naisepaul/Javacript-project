@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const moves = document.querySelector('#no-of-moves');
     let flippedCards = [];
     let matchedColors = 0;
+    let timerElement = document.getElementById("timer");
 
     // Code with Ania Kubów
 
@@ -25,10 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
             box.setAttribute('data-color', shufColors[i]);
             // adding a class backcard
             box.classList.add('backcard');
-            cardContainer.append(box);
+            cardContainer.appendChild(box);
             box.addEventListener('click', flipCard);
         }
-
     }
 
     //fliping cards (clicking cards to show the color)
@@ -40,28 +40,32 @@ document.addEventListener('DOMContentLoaded', function () {
             flippedCards.push(this);
             this.classList.remove('backcard');
             this.style.backgroundColor = colors['data-color'];
-            // checking the number of clicked cards are equal to 2 and making a break of 3 seconds to view
+            // checking the number of clicked cards are equal to 2 and making a break 300 miliiseconds to view
             if (flippedCards.length == 2) {
                 setTimeout(checkMatch, 300);
             }
         }
 
     }
+
     // checking matching colors
 
     function checkMatch() {
+
         //taking the attribute of data-color to two variables
         const firstColor = flippedCards[0].getAttribute('data-color');
         const secondColor = flippedCards[1].getAttribute('data-color');
         // check first color and second color are same
         // and checking the same card clicks twice
-        if ((firstColor === secondColor) && (flippedCards[0] != flippedCards[1])) {
-            //remove the click events for the same color card
 
+        if ((firstColor === secondColor) && (flippedCards[0] != flippedCards[1])) {
+
+            //remove the click events for the same color card
             flippedCards[0].removeEventListener('click', flipCard);
             flippedCards[1].removeEventListener('click', flipCard);
             matchedColors++;
             checkGameOver();
+
         } else {
             // both cards going back to the class backcard
             flippedCards[0].classList.add('backcard');
@@ -74,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // counting the moves function for each pair
         addMove();
     }
+
     // counting the moves
     let movescount = 0;
     moves.innerHtml = 0;
@@ -82,18 +87,21 @@ document.addEventListener('DOMContentLoaded', function () {
         moves.innerHTML = movescount;
     }
 
+
+
     // checking game is over
     function checkGameOver() {
         //checking the numbers of matchedColors and colors array length 
         if (matchedColors == colors.length) {
+
             cardContainer.innerHTML = 'you won';
             //removing the container class and adding new class won
             cardContainer.classList.remove('container');
             cardContainer.classList.add('won');
+
         }
     }
     gameBoard();
-
 
 });
 
