@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 setTimeout(checkMatch, 300);
             }
         }
-
     }
 
     // checking matching colors
@@ -99,10 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkGameOver() {
         //checking the numbers of matchedColors and colors array length 
         if (matchedColors == colors.length) {
-
             cardContainer.innerHTML = 'you won';
             //removing the container class and adding new class won
-            cardContainer.classList.remove('container');
+            cardContainer.classList.remove('game-container');
             cardContainer.classList.add('won');
             clearInterval(timerElement);
         }

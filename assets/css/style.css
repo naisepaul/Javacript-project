@@ -15,7 +15,6 @@ body {
     background-size: cover;
     height: 700px;
     width: auto;
-
 }
 
 header {
@@ -24,7 +23,6 @@ header {
     gap: 100px;
     justify-content: center;
     align-items: center;
-
     background: linear-gradient(to top, rgb(31, 223, 31), aquamarine);
 }
 
@@ -40,7 +38,6 @@ h1 {
     font-weight: bold;
     color: rgb(33, 51, 1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
 }
 
 /* stats and game container */
@@ -49,7 +46,6 @@ h1 {
     padding: 20px;
     box-sizing: content-box;
     width: max-content;
-
     background-size: 5px 5px;
     background-image: linear-gradient(45deg, rgb(202, 52, 52) 25%, transparent 25%, transparent 50%, rgb(245, 242, 242) 50%, #000 75%, transparent 75%, transparent);
     border-radius: 55px;
@@ -143,23 +139,34 @@ button:hover {
     font-size: 5em;
 }
 
-/* footer {
-    height: 150px;
-    position: relative;
-}*/
-
-.social-media-links {
-    text-align: left;
-}
-
-/* .social-media-links>li {
-    display: block;
-    position: relative;
-} */
-
-.social-media-links i {
+.social-media-links a {
     font-size: 160%;
     margin: 1%;
     padding: 4%;
     color: rgb(229, 43, 43);
+}
+
+/* media queries */
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+    .cards div {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cards div {
+        width: 60px;
+        height: 60px;
+    }
 }
