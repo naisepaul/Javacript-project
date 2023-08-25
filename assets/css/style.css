@@ -55,6 +55,7 @@ h1 {
     margin: 5px auto;
     /* Center the container horizontally */
     cursor: pointer;
+
 }
 
 /* stats container */
@@ -218,6 +219,11 @@ button:hover {
         text-align: left;
         font-size: 2em;
     }
+
+    .won {
+
+        width: 450px;
+    }
 }
 
 /* 
@@ -262,6 +268,10 @@ button:hover {
         font-size: 1em;
     }
 
+    .won {
+        width: 300px;
+    }
+
 }
 
 /* ##Screen=Below 320px */
@@ -280,7 +290,6 @@ button:hover {
     .cards div {
         width: 60px;
         height: 60px;
-
     }
 
     h1 {
@@ -300,6 +309,11 @@ button:hover {
     #moves-count,
     #time {
         font-size: 1em;
+    }
+
+    .won {
+
+        width: 250px;
     }
 
 }
