@@ -43,7 +43,7 @@ h1 {
 /* stats and game container */
 /* https: //www.youtube.com/watch?v=dqqxkrKhfS4&t=1873s */
 .container {
-    padding: 2%;
+    padding: 1%;
     box-sizing: border-box;
     width: max-content;
     /* Make it a full-width container */
@@ -51,27 +51,25 @@ h1 {
     background-image: linear-gradient(45deg, rgb(202, 52, 52) 25%, transparent 25%, transparent 50%, rgb(245, 242, 242) 50%, #000 75%, transparent 75%, transparent);
     border-radius: 5%;
     position: relative;
-    margin: 25px auto;
+    margin: 5px auto;
     /* Center the container horizontally */
     cursor: pointer;
-
 }
 
 /* stats container */
 .stats-container {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    /* font-size: 20px; */
 }
-
 
 
 /* using grid for making color cards */
 .cards {
-    margin: 48px, auto;
+    margin: 25px, auto;
     width: max-content;
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -81,8 +79,8 @@ h1 {
 /* sizing the div */
 .cards div {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border: 2px solid rgb(78, 39, 82);
     border-radius: 50%;
     cursor: pointer;
@@ -111,7 +109,7 @@ h1 {
 /* start button styling */
 button {
 
-    margin-top: 50px;
+    margin-top: 30px;
     text-transform: uppercase;
     text-align: center;
     width: 130px;
@@ -159,10 +157,6 @@ button:hover {
     body {
         height: 100vh;
     }
-
-    h1 {
-        font-size: 3.5em;
-    }
 }
 
 /* media queries */
@@ -196,10 +190,6 @@ button:hover {
         text-align: left;
         font-size: 3em;
     }
-
-    .cards {
-        margin: 20px, auto;
-    }
 }
 
 /* 
@@ -220,9 +210,5 @@ button:hover {
     h1 {
         text-align: left;
         font-size: 2em;
-    }
-
-    .cards {
-        margin: 20px, auto;
     }
 }
