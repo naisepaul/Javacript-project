@@ -29,10 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
             cardContainer.appendChild(box);
             box.addEventListener('click', flipCard);
         }
+
     }
 
     //fliping cards (clicking cards to show the color)
     function flipCard() {
+
         // checking the number of clicked cards are less than 2
         if (flippedCards.length < 2) {
             this.getAttribute('data-color');
@@ -44,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (flippedCards.length == 2) {
                 setTimeout(checkMatch, 300);
             }
+
         }
     }
 
@@ -86,12 +89,12 @@ document.addEventListener('DOMContentLoaded', function () {
         moves.innerHTML = movescount;
     }
     //time settings
-
     let currentTime = null;
     const endTimer = setInterval(() => {
         currentTime++;
         timerElement.innerHTML = currentTime;
     }, 1000);
+
 
     // checking game is over
     function checkGameOver() {

@@ -74,7 +74,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-gap: 10px;
-    /* column-gap: 10px; */
+
 }
 
 /* sizing the div */
@@ -183,8 +183,8 @@ button:hover {
     }
 
     .cards div {
-        width: 85px;
-        height: 85px;
+        width: 100px;
+        height: 100px;
     }
 
     h1 {
@@ -203,35 +203,20 @@ button:hover {
         width: 100vw;
     }
 
-    /* .backcard {
-        width: 70px;
-        height: 70px;
-    } */
-
     header {
         gap: 50px;
         align-items: left;
     }
 
-    .container {
-        margin: 0px;
-        width: 80%;
-    }
-
-    .cards {
-        grid-column-gap: 10px;
-    }
-
     .cards div {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
     }
 
     h1 {
         text-align: left;
         font-size: 2em;
     }
-
 }
 
 /* 
@@ -239,37 +224,31 @@ button:hover {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
 
+    header {
+        gap: 50px;
+        align-items: left;
+    }
 
-
-    /* .container {
-        box-sizing: content-box;
-        margin: 5px;
-        padding: 0%;
-    } */
     .cards {
-        gap: 3px;
+        grid-template-columns: repeat(4, 70px);
+
     }
 
     .cards div {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
+
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 1.5em;
     }
 
     button {
         float: left;
-    }
-
-    h1 {
-        /* width: 80vh; */
-        text-align: center;
-        font-size: 1em;
-    }
-
-    .container {
-        margin: 1px;
-        padding: 0%;
     }
 
     .social-media-links a {
@@ -282,14 +261,11 @@ button:hover {
         font-size: 1em;
     }
 
-    /* header {
-        width: 100vw;
-    } */
 }
 
 /* ##Screen=Below 320px */
 
-@media (max-width: 319px) {
+@media (max-width: 320px) {
     .cards {
         gap: 0px;
     }
