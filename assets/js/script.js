@@ -86,23 +86,23 @@ document.addEventListener('DOMContentLoaded', function () {
         moves.innerHTML = movescount;
     }
     //time settings
-    setInterval(function () {
 
-        let currentTime = timerElement.innerHTML;
+    let currentTime = null;
+    const endTimer = setInterval(() => {
         currentTime++;
         timerElement.innerHTML = currentTime;
     }, 1000);
-
 
     // checking game is over
     function checkGameOver() {
         //checking the numbers of matchedColors and colors array length 
         if (matchedColors == colors.length) {
-            cardContainer.innerHTML = 'you won';
+            cardContainer.innerHTML = 'You Won';
             //removing the container class and adding new class won
             cardContainer.classList.remove('game-container');
             cardContainer.classList.add('won');
-            clearInterval(timerElement);
+            clearInterval(endTimer);
+
         }
     }
     gameBoard();

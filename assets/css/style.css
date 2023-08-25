@@ -73,7 +73,8 @@ h1 {
     width: max-content;
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    gap: 10px;
+    grid-gap: 10px;
+    /* column-gap: 10px; */
 }
 
 /* sizing the div */
@@ -199,7 +200,26 @@ button:hover {
 
 @media (min-width: 481px) and (max-width: 767px) {
     body {
-        height: 100vh;
+        width: 100vw;
+    }
+
+    /* .backcard {
+        width: 70px;
+        height: 70px;
+    } */
+
+    header {
+        gap: 50px;
+        align-items: left;
+    }
+
+    .container {
+        margin: 0px;
+        width: 80%;
+    }
+
+    .cards {
+        grid-column-gap: 10px;
     }
 
     .cards div {
@@ -211,6 +231,7 @@ button:hover {
         text-align: left;
         font-size: 2em;
     }
+
 }
 
 /* 
@@ -241,6 +262,7 @@ button:hover {
     }
 
     h1 {
+        /* width: 80vh; */
         text-align: center;
         font-size: 1em;
     }
@@ -252,9 +274,7 @@ button:hover {
 
     .social-media-links a {
         font-size: 100%;
-        /* margin: 1%;
-        padding: 4%;
-        color: rgb(229, 43, 43); */
+
     }
 
     #moves-count,
@@ -262,7 +282,46 @@ button:hover {
         font-size: 1em;
     }
 
-    header {
-        width: auto;
+    /* header {
+        width: 100vw;
+    } */
+}
+
+/* ##Screen=Below 320px */
+
+@media (max-width: 319px) {
+    .cards {
+        gap: 0px;
+    }
+
+    .cards div {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        float: left;
+    }
+
+    h1 {
+
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .container {
+        margin: 1px;
+        padding: 0%;
+        width: 60%
+    }
+
+    .social-media-links a {
+        font-size: 80%;
+
+    }
+
+    #moves-count,
+    #time {
+        font-size: 1em;
     }
 }
