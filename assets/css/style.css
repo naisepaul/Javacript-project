@@ -212,3 +212,29 @@ button:hover {
         font-size: 2em;
     }
 }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* .cards {
+        gap: 5px;
+    } */
+    .container {
+        margin: 5px;
+    }
+
+    .cards div {
+        width: 50px;
+        height: 50px;
+        gap: 5px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 1em;
+    }
+}
