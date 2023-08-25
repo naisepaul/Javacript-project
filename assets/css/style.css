@@ -220,21 +220,49 @@ button:hover {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    /* .cards {
-        gap: 5px;
-    } */
-    .container {
+
+
+    /* .container {
+        box-sizing: content-box;
         margin: 5px;
+        padding: 0%;
+    } */
+    .cards {
+        gap: 3px;
     }
 
     .cards div {
-        width: 50px;
-        height: 50px;
-        gap: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    button {
+        float: left;
     }
 
     h1 {
-        text-align: left;
+        text-align: center;
         font-size: 1em;
+    }
+
+    .container {
+        margin: 1px;
+        padding: 0%;
+    }
+
+    .social-media-links a {
+        font-size: 100%;
+        /* margin: 1%;
+        padding: 4%;
+        color: rgb(229, 43, 43); */
+    }
+
+    #moves-count,
+    #time {
+        font-size: 1em;
+    }
+
+    header {
+        width: auto;
     }
 }
