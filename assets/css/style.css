@@ -43,18 +43,18 @@ h1 {
 /* stats and game container */
 /* https: //www.youtube.com/watch?v=dqqxkrKhfS4&t=1873s */
 .container {
-    padding: 20px;
-    box-sizing: content-box;
+    padding: 2%;
+    box-sizing: border-box;
     width: max-content;
+    /* Make it a full-width container */
     background-size: 5px 5px;
     background-image: linear-gradient(45deg, rgb(202, 52, 52) 25%, transparent 25%, transparent 50%, rgb(245, 242, 242) 50%, #000 75%, transparent 75%, transparent);
-    border-radius: 55px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* center the container  */
+    border-radius: 5%;
+    position: relative;
+    margin: 25px auto;
+    /* Center the container horizontally */
     cursor: pointer;
+
 }
 
 /* stats container */
@@ -66,6 +66,8 @@ h1 {
     align-items: center;
     font-size: 24px;
 }
+
+
 
 /* using grid for making color cards */
 .cards {
@@ -108,7 +110,8 @@ h1 {
 
 /* start button styling */
 button {
-    margin-top: 20px;
+
+    margin-top: 50px;
     text-transform: uppercase;
     text-align: center;
     width: 130px;
@@ -156,6 +159,10 @@ button:hover {
     body {
         height: 100vh;
     }
+
+    h1 {
+        font-size: 3.5em;
+    }
 }
 
 /* media queries */
@@ -188,6 +195,31 @@ button:hover {
     h1 {
         text-align: left;
         font-size: 3em;
+    }
+
+    .cards {
+        margin: 20px, auto;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        height: 100vh;
+    }
+
+    .cards div {
+        width: 70px;
+        height: 70px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 2em;
     }
 
     .cards {
