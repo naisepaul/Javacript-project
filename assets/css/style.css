@@ -71,7 +71,7 @@ h1 {
 
 /* using grid for making color cards */
 .cards {
-    margin: 25px, auto;
+    margin: 25px auto;
     width: max-content;
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -135,7 +135,7 @@ button:hover {
 
 /* creating a class 'won' at the end  */
 .won {
-    margin: 48px, auto;
+    margin: 48px auto;
     width: 500px;
     display: flex;
     justify-content: center;
@@ -207,7 +207,7 @@ button:hover {
 
     header {
         gap: 50px;
-        align-items: left;
+        text-align: left;
     }
 
     .cards div {
@@ -235,7 +235,7 @@ button:hover {
 
     header {
         gap: 50px;
-        align-items: left;
+        text-align: left;
     }
 
     .cards {
@@ -279,7 +279,7 @@ button:hover {
 @media (max-width: 320px) {
     header {
         gap: 50px;
-        align-items: left;
+        text-align: left;
     }
 
     .cards {
@@ -312,7 +312,7 @@ button:hover {
     }
 
     .won {
-
+        font-size: 3em;
         width: 250px;
     }
 
