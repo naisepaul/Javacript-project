@@ -227,8 +227,12 @@ button:hover {
     }
 
     .won {
-
         width: 450px;
+    }
+
+    .instructions {
+        font-size: 10px;
+        /* font-weight: normal; */
     }
 }
 
@@ -271,6 +275,10 @@ button:hover {
 
     #moves-count,
     #time {
+        font-size: 1em;
+    }
+
+    .instructions {
         font-size: 1em;
     }
 
@@ -320,6 +328,10 @@ button:hover {
     .won {
         font-size: 3em;
         width: 250px;
+    }
+
+    .instructions {
+        font-size: 12px;
     }
 
 }
