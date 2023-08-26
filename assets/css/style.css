@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('../images/memorygame.webp');
+    background-image: url('../images/memorygame.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +49,7 @@ h1 {
     width: max-content;
     /* Make it a full-width container */
     background-size: 5px 5px;
-    background-image: linear-gradient(45deg, rgb(202, 52, 52) 25%, transparent 25%, transparent 50%, rgb(245, 242, 242) 50%, #000 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgb(209, 67, 67) 25%, transparent 25%, transparent 50%, rgb(245, 242, 242) 50%, #000 75%, transparent 75%, transparent);
     border-radius: 5%;
     position: relative;
     margin: 5px auto;
@@ -115,7 +115,7 @@ button {
     margin-top: 30px;
     text-transform: uppercase;
     text-align: center;
-    width: 130px;
+    width: 140px;
     height: 40px;
     float: right;
     border-radius: 10px;
@@ -131,6 +131,12 @@ button {
 button:hover {
     background-color: orange;
     color: black;
+}
+
+.instructions {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(89, 6, 6);
 }
 
 /* creating a class 'won' at the end  */

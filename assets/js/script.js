@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // https://www.youtube.com/watch?v=HCIFLBUldW8&t=2050s
 
     function gameBoard() {
+
         for (let i = 0; i < colorsPickList.length; i++) {
             //creating 16 div to the page
             let box = document.createElement('div');
@@ -46,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (flippedCards.length == 2) {
                 setTimeout(checkMatch, 300);
             }
-
         }
     }
 
@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
             // both cards going back to the class backcard
             flippedCards[0].classList.add('backcard');
             flippedCards[1].classList.add('backcard');
-
         }
         //empty the flippedCards array
         flippedCards = [];
@@ -89,12 +88,11 @@ document.addEventListener('DOMContentLoaded', function () {
         moves.innerHTML = movescount;
     }
     //time settings
-    let currentTime = null;
+    let currentTime = 0;
     const endTimer = setInterval(() => {
         currentTime++;
         timerElement.innerHTML = currentTime;
     }, 1000);
-
 
     // checking game is over
     function checkGameOver() {
@@ -104,10 +102,25 @@ document.addEventListener('DOMContentLoaded', function () {
             //removing the container class and adding new class won
             cardContainer.classList.remove('game-container');
             cardContainer.classList.add('won');
+            //ending the timer
             clearInterval(endTimer);
-
         }
     }
+
+    let instruction = document.getElementById('instruction');
+    instruction.addEventListener("click", function () {
+        cardContainer.classList.remove('container');
+        cardContainer.classList.remove('won');
+        cardContainer.classList.add('instructions');
+        cardContainer.innerHTML = ` <li>To begin the game, click on any card to flip it over</li>
+              <li>Only two cards at a time can be flipped</li>
+              <li>You need to find all 8 pairs to complete the game.</li>
+              <li>Start the game and beat your time or the number of moves taken!</li>`;
+
+    });
+
+
+
     gameBoard();
 
 });
