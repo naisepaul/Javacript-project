@@ -7,24 +7,24 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
 
 ## Table of Contents
 
-- User Experience
-  - User goals
-  - User stories
-  - structure of the Website
-  - Wireframes
-  - surface
-- Features
-- Technology
-- Testing
-  - functionality Testing
-  - Compatibility Testing
-  - Browser Compatibility Testing
-  - Validator Testing
-  - Accessibilty Testing
-  - Perfomance Testing (Lighthouse)
-    - Desktop results
-    - Mobile Results
-- Code Validation
-- Deployment
-- Credits
-- Screenshots
+- [UX (User Experience)](<#ux (user-experience)>)
+  - [User goals](#user-goals)
+  - [User stories](#user-stories)
+  - [Structure of the Website](#structure-of-the-website)
+  - [Wireframes](#wireframes)
+  - [Surface](#surface)
+- [Features](#features)
+- [Technology](#technology)
+- [Testing](#testing)
+  - [functionality Testing](#functionality-testing)
+  - [Compatibility Testing](#compatibility-testing)
+  - [Browser Compatibility Testing](#browser-compatibility-testing)
+  - [Validator Testing](#validator-Testing)
+  - [Accessibilty Testing](#accessibilty-testing)
+  - [Perfomance Testing (Lighthouse)](#perfomance-testing)
+    - [Desktop results](#desktop-results)
+    - [Mobile Results](#mobile-results)
+- [Code Validation](#code-validation)
+- [Deployment](#deployment)
+- [Credits](#credit)
+- [Screenshots](#screenshot)
