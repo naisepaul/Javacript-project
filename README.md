@@ -4,7 +4,7 @@ Memory card games have long captured the hearts and minds of people of all ages 
 
 Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript-project/). This Readme file provides an overview of my second project- *Interactive Front-End Development* . Please read through this documents to familiarize everyone with featues and guildlines.
 
-![Responsive view](./assets/images/readme-images/readme-images/mockup.png)
+![Responsive view](assets/images/readme-images/mockup.png)
 
 ## Table of Contents
 
@@ -60,4 +60,7 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
 - The user should be receiving a message to confirm their win and score at the end of the game when all matched pairs have been found.
 - The user should have the option to reset the game at any time during play.
 - By playing this game the user should be able to test their memory skill in a fun environment.
+
+## Structure of the Website
   
+The website is meticulously crafted to ensure a seamless and intuitive user experience across all types of devices. Whether accessed on a desktop computer, tablet, or mobile device, users can expect a phenomenal browsing experience with no discernible differences. Every element of the website is thoughtfully designed and optimized to deliver utmost user satisfaction and ensure that individuals can effortlessly navigate and interact with the site, regardless of the device they are using. The goal is to create a consistently outstanding user experience that transcends the boundaries of different devices.
