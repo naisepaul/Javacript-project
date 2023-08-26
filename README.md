@@ -5,3 +5,26 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
 
 ![Responsive view](assets/readme-images/mockup.png)
 
+## Table of Contents
+
+- User Experience
+  - User goals
+  - User stories
+  - structure of the Website
+  - Wireframes
+  - surface
+- Features
+- Technology
+- Testing
+  - functionality Testing
+  - Compatibility Testing
+  - Browser Compatibility Testing
+  - Validator Testing
+  - Accessibilty Testing
+  - Perfomance Testing (Lighthouse)
+    - Desktop results
+    - Mobile Results
+- Code Validation
+- Deployment
+- Credits
+- Screenshots
