@@ -50,4 +50,14 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
 - Relaxation:
   
    For some users, playing memory card games serves as a way to relax and unwind. They may visit the website to take a break from their daily routine or reduce stress.
+
+## User Stories
+
+- The user should see a grid style game with cards on display these cards will have a front and back image.
+- The user should only be able to click on two cards at a time, to try to find a matched pair of colors.
+- Once the first card has been flipped and when the second card has been flipped a move is logged.
+- The user should expect that once the game has been completed, the timer will stop.
+- The user should be receiving a message to confirm their win and score at the end of the game when all matched pairs have been found.
+- The user should have the option to reset the game at any time during play.
+- By playing this game the user should be able to test their memory skill in a fun environment.
   
