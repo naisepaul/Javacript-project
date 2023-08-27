@@ -20,6 +20,7 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [Colors](#colors)
     - [Fonts](#fonts)
     - [Images](#images)
+- [Features](#features)
   
 # UX
 
@@ -54,6 +55,8 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
 ## Structure of the Website
   
 The website is meticulously crafted to ensure a seamless and intuitive user experience across all types of devices. Whether accessed on a desktop computer, tablet, or mobile device, users can expect a phenomenal browsing experience with no discernible differences. Every element of the website is thoughtfully designed and optimized to deliver utmost user satisfaction and ensure that individuals can effortlessly navigate and interact with the site, regardless of the device they are using. The goal is to create a consistently outstanding user experience that transcends the boundaries of different devices.
+
+[Back to Table of contents](#table-of-contents)
 
 ## Wireframes
 
@@ -96,4 +99,18 @@ Cards -  red, blue, green, yellow, teal, cyan, grey, pink
 ### Images
 
 - I used www.freepik.com for downloding images.
+
+# Features
+
+Memory card games, also known as matching games, are popular card games that typically involve matching pairs of cards with identical images or patterns. These games are often used for entertainment and memory improvement. Here are some common features of memory card games:
+
+Card Matching: The core gameplay involves a set of face-down cards placed in a grid. Players take turns flipping over two cards at a time to find matching pairs.
+
+Game Grid: The grid layout can vary in size, with the number of cards ranging from a small 4x4 grid to a larger 6x6 or more. The choice of grid size affects the difficulty level of the game.
+
+Card Design: Cards are designed with various images, symbols, or patterns, and the goal is to match cards with identical designs.
+
+Scoring: Some memory card games keep track of the number of moves or time taken to complete the game, allowing players to compete for high scores.
+
+Timer: To add an element of challenge, some memory card games have a timer that counts down as players try to match all the pairs within a certain time limit.
 
