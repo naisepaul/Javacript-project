@@ -21,6 +21,12 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [Fonts](#fonts)
     - [Images](#images)
 - [Features](#features)
+    - [Game Grid](#game-grid)
+    - [Game Information](#game-information)
+    - [Navigation buttons](#navigation-buttons)
+    - [Instruction](#instruction)
+    - [Game won](#game-won)
+  - [Future Features](#future-features)
   
 # UX
 
@@ -102,15 +108,40 @@ Cards -  red, blue, green, yellow, teal, cyan, grey, pink
 
 # Features
 
-Memory card games, also known as matching games, are popular card games that typically involve matching pairs of cards with identical images or patterns. These games are often used for entertainment and memory improvement. Here are some common features of memory card games:
+Memory card games, also known as matching games, are popular card games that typically involve matching pairs of cards with identical images or patterns. These games are often used for entertainment and memory improvement.
 
-Card Matching: The core gameplay involves a set of face-down cards placed in a grid. Players take turns flipping over two cards at a time to find matching pairs.
+### Game Grid
 
-Game Grid: The grid layout can vary in size, with the number of cards ranging from a small 4x4 grid to a larger 6x6 or more. The choice of grid size affects the difficulty level of the game.
+The game layout has been kept simple, using a 4x4 style grid, with a total of 16 cards. I felt that this number of cards was the most suitable in order to keep the game responsive for smaller devices.
 
-Card Design: Cards are designed with various images, symbols, or patterns, and the goal is to match cards with identical designs.
+![Responsive view](assets/images/readme-images/game-grid.png)
 
-Scoring: Some memory card games keep track of the number of moves or time taken to complete the game, allowing players to compete for high scores.
+### Game Information
 
-Timer: To add an element of challenge, some memory card games have a timer that counts down as players try to match all the pairs within a certain time limit.
+The game timer is activated once it press start button. The moves tracker  counter starts the count when the second card had been flipped.
 
+![Responsive view](assets/images/readme-images/moves-timer.png)
+
+### Navigation buttons
+
+ "Instruction" button was not originally planned for this game. However, once I had completed the game, I felt an additional button beside the game start button, would allow for a more positive user experience, if the user had the option to see the game instructions.
+
+![Responsive view](assets/images/readme-images/nav-button.png)
+
+### Instruction
+
+I added instruction details in a yellow background to see the details clearly.
+
+![Responsive view](assets/images/readme-images/instruction.png)
+
+### Game won
+
+I added game won details simply "you won " with winning moves and timer.
+
+![Responsive view](assets/images/readme-images/game-won.png)
+
+## Future Features
+
+I would like to add different difficulty styles like easy, medium and hard.
+
+I would like to add a high score leader board to the game to allow the user to add their name and record the moves and time.
