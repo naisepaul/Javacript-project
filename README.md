@@ -64,3 +64,15 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
 ## Structure of the Website
   
 The website is meticulously crafted to ensure a seamless and intuitive user experience across all types of devices. Whether accessed on a desktop computer, tablet, or mobile device, users can expect a phenomenal browsing experience with no discernible differences. Every element of the website is thoughtfully designed and optimized to deliver utmost user satisfaction and ensure that individuals can effortlessly navigate and interact with the site, regardless of the device they are using. The goal is to create a consistently outstanding user experience that transcends the boundaries of different devices.
+
+## Wireframes
+
+I used wireframe.cc to create wireframes
+
+[Front Page - Desktop & Mobile](assets/images/readme-images/wireframe-front.png)
+
+[win - Desktop & Mobile](assets/images/readme-images/wireframe-win.png)
+
+[Instruction - Desktop & Mobile](assets/images/readme-images/wireframe-instr.png)
+
+
