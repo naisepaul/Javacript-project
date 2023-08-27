@@ -20,13 +20,30 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [Colors](#colors)
     - [Fonts](#fonts)
     - [Images](#images)
-- [Features](#features)
+  - [Features](#features)
     - [Game Grid](#game-grid)
     - [Game Information](#game-information)
     - [Navigation buttons](#navigation-buttons)
     - [Instruction](#instruction)
     - [Game won](#game-won)
   - [Future Features](#future-features)
+  - [Technology Used](#technology-used)
+    - [HTML 5](#html-5)
+    - [CSS](#css)
+    - [JavaScript](#javascript)
+    - [Font Awesome](#font-awesome)
+    - [Google fonts](#google-fonts)
+    - [GitHub](#github)
+    - [Wireframe.cc](#wireframecc)
+    - [Photoshop](#photoshop)
+    - [Lighthouse](#lighthouse)
+    - [Google Chrome Development Tools](#google-chrome-development-tools)
+- [Testing](#testing)
+  - [Functionality testing](#functionality-testing)
+  - [Compatibility testing](#compatibility-testing)
+  - [Issues found during site development](#issues-found-during-site-development)
+      - [Mobile screen compatability](#mobile-screen-compatability)
+      - [Horizontal scrolling bar on the bottom of the page](#horizontal-scrolling-bar-on-the-bottom-of-the-page)
   
 # UX
 
@@ -106,7 +123,7 @@ Cards -  red, blue, green, yellow, teal, cyan, grey, pink
 
 - I used www.freepik.com for downloding images.
 
-# Features
+## Features
 
 Memory card games, also known as matching games, are popular card games that typically involve matching pairs of cards with identical images or patterns. These games are often used for entertainment and memory improvement.
 
@@ -145,3 +162,79 @@ I added game won details simply "you won " with winning moves and timer.
 I would like to add different difficulty styles like easy, medium and hard.
 
 I would like to add a high score leader board to the game to allow the user to add their name and record the moves and time.
+
+[Back to Table of contents](#table-of-contents)
+
+## Technology Used
+
+### HTML 5
+
+- As a structure language
+
+### CSS
+
+- As a style language
+  
+### JavaScript  
+
+- For the logic of the game. To manipulate the HTML and CSS on the screen.
+
+### Font Awesome
+
+- As an icon library for social media links
+
+### Google fonts
+
+- As a font resource
+
+### GitHub
+
+- As a software hosting platform to keep project ina remote location
+
+### Wireframe.cc
+
+- As a wireframing tool
+
+### Photoshop
+
+- As an Image editor
+  
+### Lighthouse
+
+- Testing code health, accessibility, speed and search engine optimisation..
+
+### Google Chrome Development Tools
+
+- Testing code on various device sizes during development and debugging.
+
+[Back to Table of contents](#table-of-contents)
+
+# Testing
+
+## Functionality testing
+
+I used Chrome developer tools and Microsoft Edge through out the project for testing and solving problems with responsiveness and style issues.
+
+## Compatibility testing
+
+Website was tested multiple virtual mobile and tablet devices and browser.
+
+## Issues found during site development
+
+- Getting cards backside
+- Instruction details was on columns, after removing the class cards insructions shown in rows.
+- Timer ending when game is finish. Give a variable to the setintravel clears the problem.
+  
+- Making the container in the center.
+
+#### Mobile screen compatability
+
+I found many bugs when I use different size of mobile devices.
+
+- Changing card size and font size of headings fixed the problems.
+  
+- changing the game won class width in smaller devices.
+
+#### Horizontal scrolling bar on the bottom of the page
+
+- changing the card size solved the problems for mobile devices. It took half an hour to understand the problem.
