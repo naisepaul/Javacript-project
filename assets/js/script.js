@@ -111,6 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
     instruction.addEventListener("click", function () {
         cardContainer.classList.remove('container');
         cardContainer.classList.remove('won');
+        cardContainer.classList.remove('cards');
+        cardContainer.classList.remove('stats-container');
         cardContainer.classList.add('instructions');
         cardContainer.innerHTML = ` <li>To begin the game, click on any card to flip it over</li>
               <li>Only two cards at a time can be flipped</li>
@@ -118,8 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
               <li>Start the game and beat your time or the number of moves taken!</li>`;
 
     });
-
-
 
     gameBoard();
 
