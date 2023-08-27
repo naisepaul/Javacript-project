@@ -8,28 +8,18 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
 
 ## Table of Contents
 
-- [UX (User Experience)](#ux (user-experience))
+- [Unveil The Hues Of Memory](#unveil-the-hues-of-memory)
+  - [Table of Contents](#table-of-contents)
+- [UX](#ux)
   - [Website Owner Goals](#website-owner-goals)
   - [User goals](#user-goals)
-  - [User stories](#user-stories)
+  - [User Stories](#user-stories)
   - [Structure of the Website](#structure-of-the-website)
   - [Wireframes](#wireframes)
   - [Surface](#surface)
-- [Features](#features)
-- [Technology](#technology)
-- [Testing](#testing)
-  - [functionality Testing](#functionality-testing)
-  - [Compatibility Testing](#compatibility-testing)
-  - [Browser Compatibility Testing](#browser-compatibility-testing)
-  - [Validator Testing](#validator-Testing)
-  - [Accessibilty Testing](#accessibilty-testing)
-  - [Perfomance Testing (Lighthouse)](#perfomance-testing)
-    - [Desktop results](#desktop-results)
-    - [Mobile Results](#mobile-results)
-- [Code Validation](#code-validation)
-- [Deployment](#deployment)
-- [Credits](#credit)
-- [Screenshots](#screenshot)
+    - [Colors](#colors)
+    - [Fonts](#fonts)
+    - [Images](#images)
   
 # UX
 
@@ -75,4 +65,35 @@ I used wireframe.cc to create wireframes
 
 [Instruction - Desktop & Mobile](assets/images/readme-images/wireframe-instr.png)
 
+## Surface
+
+### Colors
+
+Colors used in this project
+
+Social Media link, h1 - rgb(229, 43, 43)
+
+Header background - rgb(31, 223, 31), aquamarine
+
+cards border - rgb(78, 39, 82)
+
+cards hover - black
+
+button background - blue, white
+
+button hover - yellow, black
+
+Instructions - rgb(89, 6, 6)
+
+Instructions background-color - Yellow
+
+Cards -  red, blue, green, yellow, teal, cyan, grey, pink
+
+### Fonts
+
+- for whole body I used indie flower
+
+### Images
+
+- I used www.freepik.com for downloding images.
 
