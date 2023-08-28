@@ -38,12 +38,18 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [Photoshop](#photoshop)
     - [Lighthouse](#lighthouse)
     - [Google Chrome Development Tools](#google-chrome-development-tools)
-- [Testing](#testing)
+    - [favicon.io](#faviconio)
+  - [Testing](#testing)
   - [Functionality testing](#functionality-testing)
   - [Compatibility testing](#compatibility-testing)
   - [Issues found during site development](#issues-found-during-site-development)
-      - [Mobile screen compatability](#mobile-screen-compatability)
-      - [Horizontal scrolling bar on the bottom of the page](#horizontal-scrolling-bar-on-the-bottom-of-the-page)
+    - [Mobile screen compatability](#mobile-screen-compatability)
+    - [Horizontal scrolling bar on the bottom of the page](#horizontal-scrolling-bar-on-the-bottom-of-the-page)
+  - [Performance testing](#performance-testing)
+    - [Desktop Results](#desktop-results)
+    - [Mobile Results](#mobile-results)
+  - [Code Validation](#code-validation)
+  - [Deployment](#deployment)
   
 # UX
 
@@ -206,10 +212,14 @@ I would like to add a high score leader board to the game to allow the user to a
 ### Google Chrome Development Tools
 
 - Testing code on various device sizes during development and debugging.
+  
+### favicon.io  
+
+- For  favicon generating
 
 [Back to Table of contents](#table-of-contents)
 
-# Testing
+## Testing
 
 ## Functionality testing
 
@@ -227,7 +237,7 @@ Website was tested multiple virtual mobile and tablet devices and browser.
   
 - Making the container in the center.
 
-#### Mobile screen compatability
+### Mobile screen compatability
 
 I found many bugs when I use different size of mobile devices.
 
@@ -235,6 +245,51 @@ I found many bugs when I use different size of mobile devices.
   
 - changing the game won class width in smaller devices.
 
-#### Horizontal scrolling bar on the bottom of the page
+### Horizontal scrolling bar on the bottom of the page
 
 - changing the card size solved the problems for mobile devices. It took half an hour to understand the problem.
+
+## Performance testing
+
+I run Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+
+### Desktop Results
+
+![Responsive view](assets/images/readme-images/lighthouse-desktop1.png)
+
+Final results
+
+![performance](assets/images/readme-images/lighthouse-desktop2.png)
+
+### Mobile Results
+
+![Responsive view](assets/images/readme-images/lighthouse-mobile1.png)
+
+Final results
+
+![performance](assets/images/readme-images/lighthouse-mobile2.png)
+
+## Code Validation
+
+I used 3 website to validate
+
+1. CSS Validator: https://jigsaw.w3.org/css-validator/
+2. HTML Validator: https://validator.w3.org/
+3. Javascript : https://jshint.com/
+
+[Back to Table of contents](#table-of-contents)
+
+## Deployment
+
+The project was deployed on GitHub pages. I used codeanywhere as a development environment where I commited all changes to git version control system.
+
+I used push command in codeanywhere to save changes into GitHub.
+
+To deploy the project I had to :
+
+- Log in to GitHub and click on repository to deploy [Memory game](https://naisepaul.github.io/Javacript-project/)!
+- Select `settings` and find GitHub `pages` section on the left side bar.
+- From source select `Deploy from a branch` and then select `main` branch
+- Click `save` and page was deployed after refresh
+
+Site is published at <https://naisepaul.github.io/Javacript-project/>
