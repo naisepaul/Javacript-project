@@ -50,6 +50,11 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [Mobile Results](#mobile-results)
   - [Code Validation](#code-validation)
   - [Deployment](#deployment)
+  - [Credits](#credits)
+    - [Code](#code)
+    - [content](#content)
+    - [Icons](#icons)
+    - [Images](#images-1)
   
 # UX
 
@@ -273,9 +278,9 @@ Final results
 
 I used 3 website to validate
 
-1. CSS Validator: https://jigsaw.w3.org/css-validator/
-2. HTML Validator: https://validator.w3.org/
-3. Javascript : https://jshint.com/
+1. [CSS Validator](https://jigsaw.w3.org/css-validator/)
+2. [HTML Validator](https://validator.w3.org/)
+3. [Javascript](https://jshint.com)
 
 [Back to Table of contents](#table-of-contents)
 
@@ -293,3 +298,36 @@ To deploy the project I had to :
 - Click `save` and page was deployed after refresh
 
 Site is published at <https://naisepaul.github.io/Javacript-project/>
+
+## Credits
+
+To complete this project I used Code institue student template: [Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+- My mentor
+  
+- Ideas and knowledge library:
+
+- [w3schools.com](https://www.w3schools.com)
+- [css-tricks.com](https://css-tricks.com/)
+
+- [stackoverflow.com](https://stackoverflow.com/)
+
+### Code
+
+- [double the array](https://www.youtube.com/watch?v=bznJPt4t_4s&t=742s)
+- [Game Board](https://www.youtube.com/watch?v=HCIFLBUldW8&t=2050s)
+- [centering the content]( https://www.youtube.com/watch?v=dqqxkrKhfS4&t=1873s)
+- [openai](openai.com)
+
+### content
+
+- [memory game](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game)
+
+### Icons
+
+- [font Owsome version 4.7.0](https://fontawesome.com/)
+
+### Images
+
+- www.freepik.com
+  
