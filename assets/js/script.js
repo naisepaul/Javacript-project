@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // for timer 
     let timerElement = document.getElementById("timer");
     let timerStarted = false;
+    const flipSound = document.getElementById('flipSound');
+
+    // const flipSound = new Audio('flip-card.mp3');
+    // const matchSound = new Audio('match-card.mp3');
+    // const wrongSound = new Audio('error-card.mp3');
 
     // Code with Ania Kubów
     //shuffling the colors
@@ -43,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         // checking the number of clicked cards are less than 2
         if (flippedCards.length < 2) {
+            flipSound.play();
             this.getAttribute('data-color');
             // adding the clicked cards to flippedCards array
             flippedCards.push(this);
