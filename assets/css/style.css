@@ -47,7 +47,9 @@ h1 {
 /* stats and game container */
 /* https: //www.youtube.com/watch?v=dqqxkrKhfS4&t=1873s */
 .container {
+    padding: 1%;
     box-sizing: border-box;
+    border-style: dotted;
     width: max-content;
     /* Make it a full-width container */
     background-size: 3px 3px;
@@ -84,6 +86,7 @@ h1 {
 
 /* sizing the div */
 .cards div {
+    margin: 0px 5px 0px 5px;
     position: relative;
     width: 90px;
     height: 90px;

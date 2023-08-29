@@ -11,12 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // for timer 
     let timerElement = document.getElementById("timer");
     let timerStarted = false;
-    const flipSound = document.getElementById('flipSound');
-
-    // const flipSound = new Audio('flip-card.mp3');
-    // const matchSound = new Audio('match-card.mp3');
-    // const wrongSound = new Audio('error-card.mp3');
-
+    //sound effect for flip,error,match and victory cards
+    const flipSound = new Audio('./assets/sound/flip-card.mp3');
+    const matchSound = new Audio('./assets/sound/match-card.mp3');
+    const errorSound = new Audio('./assets/sound/error-card.mp3');
+    const victorySound = new Audio('./assets/sound/victory-card.mp3');
     // Code with Ania Kubów
     //shuffling the colors
     const shufColors = colorsPickList.sort(() => 0.5 - Math.random());  // for randomly select colors
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         // checking the number of clicked cards are less than 2
         if (flippedCards.length < 2) {
-            flipSound.play();
+            flipSound.play(); // flipcard sound
             this.getAttribute('data-color');
             // adding the clicked cards to flippedCards array
             flippedCards.push(this);
@@ -78,11 +77,13 @@ document.addEventListener('DOMContentLoaded', function () {
             flippedCards[1].removeEventListener('click', flipCard);
             matchedColors++;
             checkGameOver();
+            matchSound.play(); //match sound
 
         } else {
             // both cards going back to the class backcard
             flippedCards[0].classList.add('backcard');
             flippedCards[1].classList.add('backcard');
+            errorSound.play(); //error sound
         }
         //empty the flippedCards array
         flippedCards = [];
@@ -113,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkGameOver() {
         //checking the numbers of matchedColors and colors array length 
         if (matchedColors == colors.length) {
+            victorySound.play(); // victory sound
             cardContainer.innerHTML = 'You Won';
             //removing the container class and adding new class won
             cardContainer.classList.remove('game-container');
