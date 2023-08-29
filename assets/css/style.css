@@ -172,6 +172,22 @@ button:hover {
 
 /* media queries */
 /* 
+    ##Screen = 1281px to higher resolution
+*/
+
+@media (min-width: 1281px) and (orientation: landscape) {
+
+    /* Adjust layout for landscape orientation */
+    body {
+        position: relative;
+    }
+
+    .container {
+        margin-top: 170px;
+    }
+}
+
+/* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
@@ -182,11 +198,22 @@ button:hover {
     }
 }
 
-/* media queries */
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
+
+@media (min-width: 1025px) and (max-width: 1279px) and (orientation: landscape) {
+
+    /* Adjust layout for landscape orientation */
+    body {
+        position: relative;
+    }
+
+    .container {
+        margin-top: 170px;
+    }
+}
 
 @media (min-width: 1025px) and (max-width: 1279px) {
     body {
@@ -196,7 +223,7 @@ button:hover {
 }
 
 /* 
-  ##Device = Tablets, Ipads (landscape)
+  ##Device = Tablets, Ipads, mobile (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
@@ -208,7 +235,6 @@ button:hover {
     }
 
     .container {
-        overflow: hidden;
         margin-top: 170px;
     }
 }
@@ -221,7 +247,6 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
         height: 100vh;
-
     }
 
     .cards div {
@@ -239,6 +264,7 @@ button:hover {
   ##Device = Low Resolution Tablets, Mobiles (Landscape and portrait)
   ##Screen = B/w 481px to 767px
 */
+
 @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
 
     /* Adjust layout for landscape orientation */
