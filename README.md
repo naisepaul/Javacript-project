@@ -40,14 +40,14 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [Google Chrome Development Tools](#google-chrome-development-tools)
     - [favicon.io](#faviconio)
   - [Testing](#testing)
-  - [Functionality testing](#functionality-testing)
-  - [Compatibility testing](#compatibility-testing)
-  - [Issues found during site development](#issues-found-during-site-development)
+    - [Functionality testing](#functionality-testing)
+    - [Compatibility testing](#compatibility-testing)
+    - [Issues found during site development](#issues-found-during-site-development)
     - [Mobile screen compatability](#mobile-screen-compatability)
     - [Horizontal scrolling bar on the bottom of the page](#horizontal-scrolling-bar-on-the-bottom-of-the-page)
-  - [Performance testing](#performance-testing)
-    - [Desktop Results](#desktop-results)
-    - [Mobile Results](#mobile-results)
+    - [Performance testing](#performance-testing)
+      - [Desktop Results](#desktop-results)
+      - [Mobile Results](#mobile-results)
   - [Code Validation](#code-validation)
   - [Deployment](#deployment)
   - [Credits](#credits)
@@ -55,6 +55,7 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [content](#content)
     - [Icons](#icons)
     - [Images](#images-1)
+    - [Screenshots](#screenshots)
   
 # UX
 
@@ -226,15 +227,15 @@ I would like to add a high score leader board to the game to allow the user to a
 
 ## Testing
 
-## Functionality testing
+### Functionality testing
 
 I used Chrome developer tools and Microsoft Edge through out the project for testing and solving problems with responsiveness and style issues.
 
-## Compatibility testing
+### Compatibility testing
 
 Website was tested multiple virtual mobile and tablet devices and browser.
 
-## Issues found during site development
+### Issues found during site development
 
 - Getting cards backside
 - Instruction details was on columns, after removing the class cards insructions shown in rows.
@@ -254,11 +255,11 @@ I found many bugs when I use different size of mobile devices.
 
 - changing the card size solved the problems for mobile devices. It took half an hour to understand the problem.
 
-## Performance testing
+### Performance testing
 
 I run Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
-### Desktop Results
+#### Desktop Results
 
 ![Responsive view](assets/images/readme-images/lighthouse-desktop1.png)
 
@@ -266,7 +267,7 @@ Final results
 
 ![performance](assets/images/readme-images/lighthouse-desktop2.png)
 
-### Mobile Results
+#### Mobile Results
 
 ![Responsive view](assets/images/readme-images/lighthouse-mobile1.png)
 
@@ -278,9 +279,9 @@ Final results
 
 I used 3 website to validate
 
-1. [CSS Validator](https://jigsaw.w3.org/css-validator/)
-2. [HTML Validator](https://validator.w3.org/)
-3. [Javascript](https://jshint.com)
+1. CSS Validator <https://jigsaw.w3.org/css-validator/>
+2. HTML Validator <https://validator.w3.org/>
+3. Javascript  <https://jshint.com>
 
 [Back to Table of contents](#table-of-contents)
 
@@ -299,6 +300,8 @@ To deploy the project I had to :
 
 Site is published at <https://naisepaul.github.io/Javacript-project/>
 
+[Back to Table of contents](#table-of-contents)
+
 ## Credits
 
 To complete this project I used Code institue student template: [Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
@@ -306,6 +309,8 @@ To complete this project I used Code institue student template: [Gitpod full tem
 - My mentor
   
 - Ideas and knowledge library:
+  
+- [Game Board](https://www.youtube.com/watch?v=HCIFLBUldW8&t=2050s)
 
 - [w3schools.com](https://www.w3schools.com)
 - [css-tricks.com](https://css-tricks.com/)
@@ -330,4 +335,8 @@ To complete this project I used Code institue student template: [Gitpod full tem
 ### Images
 
 - www.freepik.com
+- for pattern <https://pattern.monster/>
+
+### Screenshots
   
+[Back to Table of contents](#table-of-contents)
