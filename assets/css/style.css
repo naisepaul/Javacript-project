@@ -47,7 +47,6 @@ h1 {
 /* stats and game container */
 /* https: //www.youtube.com/watch?v=dqqxkrKhfS4&t=1873s */
 .container {
-    padding: 1%;
     box-sizing: border-box;
     width: max-content;
     /* Make it a full-width container */
