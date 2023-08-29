@@ -1,16 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // https://www.youtube.com/watch?v=bznJPt4t_4s&t=742s
-
+    // taking 8 colors for matching
     const colors = ["red", "blue", "green", "yellow", "teal", "cyan", "grey", "pink"];
     const colorsPickList = [...colors, ...colors]; //double the array
+    // for moves calculation
     const moves = document.querySelector('#no-of-moves');
     let flippedCards = [];
     let matchedColors = 0;
+    // for timer 
     let timerElement = document.getElementById("timer");
+    let timerStarted = false;
 
     // Code with Ania Kubów
-
+    //shuffling the colors
     const shufColors = colorsPickList.sort(() => 0.5 - Math.random());  // for randomly select colors
     const cardContainer = document.querySelector('.cards');
 
@@ -30,12 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
             cardContainer.appendChild(box);
             box.addEventListener('click', flipCard);
         }
-
     }
 
     //fliping cards (clicking cards to show the color)
     function flipCard() {
-
+        if (!timerStarted) {
+            timerStarted = true;
+            startTimer();
+        }
         // checking the number of clicked cards are less than 2
         if (flippedCards.length < 2) {
             this.getAttribute('data-color');
@@ -88,11 +93,15 @@ document.addEventListener('DOMContentLoaded', function () {
         moves.innerHTML = movescount;
     }
     //time settings
-    let currentTime = 0;
-    const endTimer = setInterval(() => {
-        currentTime++;
-        timerElement.innerHTML = currentTime;
-    }, 1000);
+
+    let currentTime = null;
+    let endTimer;
+    function startTimer() {
+        endTimer = setInterval(() => {
+            currentTime++;
+            timerElement.innerHTML = currentTime;
+        }, 1000);
+    }
 
     // checking game is over
     function checkGameOver() {
@@ -120,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function () {
               <li>Start the game and beat your time or the number of moves taken!</li>`;
 
     });
-
     gameBoard();
 
 });
