@@ -8,6 +8,7 @@
     font-family: 'indie flower';
 }
 
+/* Body background-image and details */
 body {
     background-image: url('../images/memorygame.png');
     background-position: center;
@@ -17,6 +18,7 @@ body {
     width: auto;
 
 }
+
 
 header {
     display: flex;
@@ -189,6 +191,25 @@ button:hover {
 @media (min-width: 1025px) and (max-width: 1279px) {
     body {
         height: 100vh;
+        position: relative;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* Adjust layout for landscape orientation */
+    body {
+        position: relative;
+    }
+
+    .container {
+        overflow: hidden;
+        margin-top: 170px;
     }
 }
 
@@ -200,6 +221,7 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
         height: 100vh;
+
     }
 
     .cards div {
@@ -214,16 +236,17 @@ button:hover {
 }
 
 /* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Device = Low Resolution Tablets, Mobiles (Landscape and portrait)
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
 
     /* Adjust layout for landscape orientation */
- 
+
     body {
         position: relative;
     }
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
