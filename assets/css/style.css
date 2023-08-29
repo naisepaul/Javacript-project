@@ -179,11 +179,12 @@ button:hover {
 
     /* Adjust layout for landscape orientation */
     body {
+        height: 100vh;
         position: relative;
     }
 
     .container {
-        margin-top: 170px;
+        margin-top: 200px;
     }
 }
 
@@ -207,11 +208,12 @@ button:hover {
 
     /* Adjust layout for landscape orientation */
     body {
+        height: 100vh;
         position: relative;
     }
 
     .container {
-        margin-top: 170px;
+        margin-top: 200px;
     }
 }
 
