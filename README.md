@@ -143,7 +143,7 @@ Memory card games, also known as matching games, are popular card games that typ
 
 The game layout has been kept simple, using a 4x4 style grid, with a total of 16 cards. I felt that this number of cards was the most suitable in order to keep the game responsive for smaller devices.
 
-![Responsive view](assets/images/readme-images/game-grid.png)
+![Responsive view](assets/images/readme-images/screenshot1.png)
 
 ### Game Information
 
