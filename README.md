@@ -338,5 +338,8 @@ To complete this project I used Code institue student template: [Gitpod full tem
 - for pattern <https://pattern.monster/>
 
 ### Screenshots
-  
-[Back to Table of contents](#table-of-contents)
+
+![Responsive view](assets/images/readme-images/screenshot1.png)
+ ![Responsive view](assets/images/readme-images/screenshot2.png)
+ ![Responsive view](assets/images/readme-images/screenshot3.png)
+ [Back to Table of contents](#table-of-contents)
