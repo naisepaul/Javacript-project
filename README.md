@@ -281,8 +281,10 @@ Final results
 
 I used 3 website to validate
 
-1. CSS Validator <https://jigsaw.w3.org/css-validator/>
-2. HTML Validator <https://validator.w3.org/>
+1. [CSS Validator](assets/images/readme-images/css-validator.png)
+   
+2. [HTML Validator](assets/images/readme-images/html-validator.png)
+
 3. Javascript  <https://jshint.com>
 
 [Back to Table of contents](#table-of-contents)
