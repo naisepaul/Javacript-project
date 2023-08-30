@@ -4,18 +4,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // taking 8 colors for matching
     const colors = ["red", "blue", "green", "yellow", "teal", "cyan", "grey", "pink"];
     const colorsPickList = [...colors, ...colors]; //double the array
+
     // for moves calculation
     const moves = document.querySelector('#no-of-moves');
     let flippedCards = [];
     let matchedColors = 0;
+
     // for timer 
     let timerElement = document.getElementById("timer");
     let timerStarted = false;
+
     //sound effect for flip,error,match and victory cards
     const flipSound = new Audio('./assets/sound/flip-card.mp3');
     const matchSound = new Audio('./assets/sound/match-card.mp3');
     const errorSound = new Audio('./assets/sound/error-card.mp3');
     const victorySound = new Audio('./assets/sound/victory-card.mp3');
+
     // Code with Ania Kubów
     //shuffling the colors
     const shufColors = colorsPickList.sort(() => 0.5 - Math.random());  // for randomly select colors
@@ -45,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             timerStarted = true;
             startTimer();
         }
+
         // checking the number of clicked cards are less than 2
         if (flippedCards.length < 2) {
             flipSound.play(); // flipcard sound
@@ -67,11 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
         //taking the attribute of data-color to two variables
         const firstColor = flippedCards[0].getAttribute('data-color');
         const secondColor = flippedCards[1].getAttribute('data-color');
+
         // check first color and second color are same
         // and checking the same card clicks twice
-
         if ((firstColor === secondColor) && (flippedCards[0] != flippedCards[1])) {
-
             //remove the click events for the same color card
             flippedCards[0].removeEventListener('click', flipCard);
             flippedCards[1].removeEventListener('click', flipCard);
@@ -93,12 +97,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // counting the moves
+
     let movescount = 0;
     moves.innerHtml = 0;
     function addMove() {
         movescount++;
         moves.innerHTML = movescount;
     }
+
     //time settings
 
     let currentTime = null;
@@ -123,7 +129,9 @@ document.addEventListener('DOMContentLoaded', function () {
             clearInterval(endTimer);
         }
     }
-
+    
+    // instruction
+    
     let instruction = document.getElementById('instruction');
     instruction.addEventListener("click", function () {
         cardContainer.classList.remove('container');
@@ -138,6 +146,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
     gameBoard();
+
+    // sound on/off 
+
+    const soundButton = document.getElementById('soundButton');
+
+    soundButton.addEventListener('click', () => {
+        const audioElements = [flipSound, matchSound, errorSound, victorySound];
+        const soundIcon = document.getElementById('soundIcon');
+        for (const audio of audioElements) {
+            if (audio.muted) {
+                audio.muted = false;
+                // Removing mute and adding volume up icons
+                soundIcon.classList.remove('fa-volume-mute');
+                soundIcon.classList.add('fa-volume-up');
+            } else {
+                audio.muted = true;
+                // adding mute and removing volume up icons
+                soundIcon.classList.remove('fa-volume-up');
+                soundIcon.classList.add('fa-volume-mute');
+            }
+        }
+    });
 
 });
 
