@@ -76,7 +76,7 @@ h1 {
 
 /* using grid for making color cards */
 .cards {
-    margin: 10px auto;
+    margin: 5px auto;
     width: max-content;
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -86,7 +86,7 @@ h1 {
 
 /* sizing the div */
 .cards div {
-    margin: 0px 5px 0px 5px;
+    margin: 0px 2px 0px 2px;
     position: relative;
     width: 90px;
     height: 90px;
@@ -117,12 +117,13 @@ h1 {
     transform-style: preserve-3d;
 }
 
-/* start and instruction button styling */
+/* start and rules button styling */
+
 button {
     margin-top: 5px;
     text-transform: uppercase;
     text-align: center;
-    width: 140px;
+    width: 100px;
     height: 40px;
     float: right;
     border-radius: 10px;
@@ -140,7 +141,7 @@ button:hover {
     color: black;
 }
 
-/* Instruction button */
+/* rules button */
 
 .instructions {
     width: 450px;
@@ -393,7 +394,7 @@ button:hover {
     }
 
     button {
-        width: 110px;
+        width: 80px;
         font-size: 1em;
     }
 

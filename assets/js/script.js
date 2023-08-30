@@ -129,9 +129,9 @@ document.addEventListener('DOMContentLoaded', function () {
             clearInterval(endTimer);
         }
     }
-    
+
     // instruction
-    
+
     let instruction = document.getElementById('instruction');
     instruction.addEventListener("click", function () {
         cardContainer.classList.remove('container');
