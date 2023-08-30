@@ -41,7 +41,7 @@ h1 {
     font-weight: bold;
     color: rgb(229, 43, 43);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    background-color: #000;
+    background-color: aqua;
 }
 
 /* stats and game container */
