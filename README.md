@@ -54,8 +54,10 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [Code](#code)
     - [content](#content)
     - [Icons](#icons)
+    - [Mockup](#mockup)
+    - [Sound](#sound)
     - [Images](#images-1)
-    - [Screenshots](#screenshots)
+  - [Screenshots](#screenshots)
   
 # UX
 
@@ -327,17 +329,26 @@ To complete this project I used Code institue student template: [Gitpod full tem
 ### content
 
 - [memory game](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game)
+- [memory game](https://github.com/kerekmarci/)
 
 ### Icons
 
 - [font Owsome version 4.7.0](https://fontawesome.com/)
 
+### Mockup
+
+- [Mockup screenshot generator](https://ui.dev/amiresponsive)
+  
+### Sound
+
+- [Sound for card flipping,errors,matching](https://freesound.org/)
+  
 ### Images
 
 - www.freepik.com
 - for pattern <https://pattern.monster/>
 
-### Screenshots
+## Screenshots
 
 ![Responsive view](assets/images/readme-images/screenshot1.png)
  ![Responsive view](assets/images/readme-images/screenshot2.png)
