@@ -26,6 +26,7 @@ Welcome to the [Unveil The Hues Of Memory](https://naisepaul.github.io/Javacript
     - [Navigation buttons](#navigation-buttons)
     - [Instruction](#instruction)
     - [Game won](#game-won)
+    - [404.html](#404html)
   - [Future Features](#future-features)
   - [Technology Used](#technology-used)
     - [HTML 5](#html-5)
@@ -171,6 +172,12 @@ I added game won details simply "you won " with winning moves and timer.
 
 ![Responsive view](assets/images/readme-images/game-won.png)
 
+### 404.html
+
+A 404 page is an error page that is displayed when a server cannot find the requested webpage.
+
+![Responsive view](assets/images/readme-images/404html.png)
+
 ## Future Features
 
 I would like to add different difficulty styles like easy, medium and hard.
@@ -282,7 +289,7 @@ Final results
 I used 3 website to validate
 
 1. [CSS Validator](assets/images/readme-images/css-validator.png)
-   
+
 2. [HTML Validator](assets/images/readme-images/html-validator.png)
 
 3. Javascript  <https://jshint.com>
